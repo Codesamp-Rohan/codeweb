@@ -1,3 +1,16 @@
-function show(){
-    document.getElementsByClassName("suboption").style.display = "contents";
-}
+function myFunction() {
+    document.getElementById("suboption").classList.toggle("show");
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.programbtn')) {
+      var dropdowns = document.getElementsByClassName("suboption");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
