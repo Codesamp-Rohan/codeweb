@@ -14,3 +14,16 @@ function myFunction() {
       }
     }
   }
+
+  function add(){
+    document.getElementById('tag1').style.backgroundColor = "#000000";
+  }
+  function add1(){
+    document.getElementById('tag2').style.backgroundColor = "#000000";
+  }
+  function add2(){
+    document.getElementById('tag3').style.backgroundColor = "#000000";
+  }
+  function add3(){
+    document.getElementById('tag4').style.backgroundColor = "#000000";
+  }
