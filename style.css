@@ -39,14 +39,15 @@ body{
 }
 .show {display:contents;}
 .suboption>a{
-    /* text-align: center; */
     display: flex;
     text-decoration: none;
     color: #010101;
     background-color: #f5602a;
-    /* border-bottom: 1px solid black; */
     width: 255px;
     height: 30px;
     align-items: center;
     justify-content: center;
+}
+.suboption>a:hover{
+
 }
