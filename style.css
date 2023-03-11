@@ -15,6 +15,7 @@ body{
     justify-content: space-between;
 }
 .r_navbar{
+    /* z-index: 5; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -30,14 +31,17 @@ body{
     width: 255px;
 }
 .suboption{
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
+    visibility: hidden;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    position: sticky;
+    background-color: #000000;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-.show {display:contents;}
+.show {visibility: visible;}
 .suboption>a{
     display: flex;
     text-decoration: none;
@@ -49,5 +53,49 @@ body{
     justify-content: center;
 }
 .suboption>a:hover{
-
+    background-color: white;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgarea{
+    position: initial;
+}
+.img{
+    width: 256px;
+    height: auto;
+}
+#img1{
+    z-index: 1;
+    position: relative;
+    animation-name: img1ani;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: unset;
+}
+#img2{
+    margin-left: -25%;
+    z-index: 2;
+    position: relative;
+    width: 275px;
+    filter: opacity(0.9);
+}
+#img3{
+    margin-left: -24%;
+    z-index: 3;
+    position: relative;
+    width: 300px;
+    filter: opacity(0.9);
+}
+@keyframes img1ani {
+    25%{
+        padding: -4px;
+    }
+    50%{
+        padding: 0px;
+    }
+    75%{
+        padding: 4px;
+    }
 }
