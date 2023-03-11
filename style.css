@@ -8,8 +8,45 @@ body{
     color: rgb(245, 96, 42);
 }
 .navbar{
+    padding: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.r_navbar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 10px;
+}
+.programbtn{
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #f5602a;
+    border: 0px;
+    height: 41px;
+    width: 255px;
+}
+.suboption{
+    /* display: none; */
+    /* visibility: hidden; */
+    gap: 2px;
+    /* display: flex; */
+    flex-direction: column;
+    /* position: absolute; */
+}
+.hidden{display: none;}
+.suboption>a{
+    /* text-align: center; */
+    display: flex;
+    text-decoration: none;
+    color: #010101;
+    background-color: #f5602a;
+    /* border-bottom: 1px solid black; */
+    width: 255px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
 }
